@@ -78,24 +78,6 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :headline="page.pricing.headline"
-    >
-      <UPricingGrid
-        id="pricing"
-        compact
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
-      >
-        <UPricingCard
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          v-bind="plan"
-        />
-      </UPricingGrid>
-    </ULandingSection>
-
-    <ULandingSection
       :headline="page.testimonials.headline"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
